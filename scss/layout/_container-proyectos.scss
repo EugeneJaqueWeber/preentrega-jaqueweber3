@@ -1,0 +1,26 @@
+.container-proyectos {
+    background: rgb(2,0,36);
+    background: linear-gradient(343deg, rgba(2,0,36,1) 0%, rgba(77,77,213,0.6643032212885154) 10%, rgba(17,107,195,0.908000700280112) 35%, rgba(25,168,241,0.9640231092436975) 51%, rgba(0,212,255,0.8575805322128851) 68%, rgba(0,212,255,0.9836309523809523) 85%, rgba(0,212,255,0.927608543417367) 97%);
+    background-repeat: no-repeat;
+    width: 425px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+
+/** adaptacion laptop - pc */
+
+@media (min-width: 1024px) {
+
+    div.container-proyectos {
+       
+        height: 720px;
+    }
+}

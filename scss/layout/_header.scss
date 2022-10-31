@@ -1,0 +1,221 @@
+.Container-Header {
+    background-color: #282828;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: fixed;
+}
+.container-container-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Container-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Container-icon img {
+    width: 40px;
+    height: 40px;
+}
+nav {
+    width: 220px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid white;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+}
+.container-link {
+    width: 40px;
+    height: 40px;
+    margin: 12px;
+}
+.container-link img {
+    width: 25px;
+    height: 25px;
+}
+.container-p {
+    position: absolute;
+}
+.container-p p {
+    text-decoration: none;
+    position: absolute;
+    color: aliceblue;
+    opacity: 0;
+}
+
+
+/** header - sobremi */
+
+header {
+    grid-area: header;
+}
+
+
+/** header - experiencia */
+
+header {
+    grid-area: header;
+}
+
+
+/** header - proyectos */
+
+header {
+    grid-area: header;
+}
+
+
+/** header - contactos */
+
+header {
+    grid-area: header;
+}
+
+
+/** adaptacion tablet */ /** header - pagina principal */
+
+@media (min-width: 768px) {
+
+    header {
+        grid-area: header;
+    }
+}
+
+
+/** adaptacion tablet */ /** header - sobremi */
+
+@media (min-width: 768px) {
+
+    header {
+        grid-area: header;
+    }
+}
+
+
+/** adaptacion laptop - pc */ /** header - pagina principal */
+
+@media (min-width: 1024px) {
+
+    Header {
+        width: 15%;
+        height: 700px;
+        position: fixed;
+    }
+    .Container-Header:hover {
+        animation-name: headertransform;
+        animation-duration: 700ms;
+        animation-delay: 150ms;
+        animation-fill-mode: forwards;
+    }
+    @keyframes headertransform {   
+        0% {
+          width: 10%;        
+        }
+        100% {
+          width: 50%;
+        }
+    }
+
+    .Container-Header {
+        width: 15%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px;
+    }
+    .container-container-icon {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Container-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    nav {
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav ul li {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        ;
+    }
+    nav ul li a img {
+        width: 50px;
+        height: 50px;
+    }
+    .container-p {
+        position: absolute;
+    }
+    .container-p p {
+        text-decoration: none;
+        position: absolute;
+        color: aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    /** animaciones-header */
+
+    nav ul li:hover {
+        width: 200px;
+        height: 100px;
+        background-color: black;
+        border-radius: 30px;
+    }
+    nav ul li:hover a img {
+        transform: translate(-30px);
+    }
+    nav ul li:hover .container-p p {
+        opacity: 1;
+    }
+
+}

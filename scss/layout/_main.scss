@@ -1,0 +1,324 @@
+.main-index {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-index section {
+    width: 320px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-article-index {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-article-index-1 {
+    margin-top: 50px;
+}
+.container-title {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container-div-img {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+}
+.container-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.container-img img {
+    width: 250px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+
+/** main - sobremi */
+
+main {
+    grid-area: main;
+}
+.container-section-sobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-main-img {
+    width: 240px;
+    height: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container-main-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+.container-article-sobremi {
+    width: 250px;
+    height: 300px;
+    background-color: thistle;
+    border-radius: 10px;
+}
+.container-article-sobremi div h1 {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container-article-sobremi div div {
+    padding: 20px;
+}
+
+
+/** main - experiencia */
+
+main {
+    grid-area: main;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.article-experiencia h1 {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container-info-experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-articles-experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-articles-experiencia div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-articles-experiencia div div p {
+    padding: 10px;
+    width: 250px;
+}
+.container-articles-experiencia img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/** main - proyectos */
+
+main {
+    grid-area: main;
+}
+.article-proyectos img {
+    width: 200px;
+    height: 100px;
+    border-radius: 40px;
+}
+.article-proyectos div div {
+    display: none;
+}
+.article-proyectos div div p {
+    display: none;
+}
+
+
+/** main - contactos */
+
+main {
+    grid-area: main;
+}
+.container-main-contactos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "1"
+    "2"
+    "3"
+    "4"
+    "5"
+    ;
+    height: 700px;
+}
+.container-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container-c img {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+.container-titles-contactos {
+    margin-left: 10px;
+}
+.container-titles-contactos a {
+    text-decoration: none;
+}
+.container-titles-contactos a h2 {
+    color: aqua;
+}
+.container-c-1 {
+    grid-area: 1;
+    width: 250px;
+    height: 80px;
+    border-radius: 50px;   
+}
+.container-c-2 {
+    grid-area: 2;
+    height: 80px;
+}
+.container-c-3 {
+    grid-area: 3;
+    height: 80px;
+}
+.container-c-4 {
+    grid-area: 4;
+    height: 80px;
+}
+.container-c-5 {
+    grid-area: 5;
+    height: 80px;
+}
+
+
+/** adaptacion tablet */ /** main - pagina principal */
+
+@media (min-width: 768px) {
+
+    main {
+        grid-area: main;
+        width: 100%;
+    }
+    .main-index {
+        width: 100%;
+    }
+    .main-index section {
+        width: 100%;
+    }
+    .container-article-index {
+        width: 700px;
+        height: 350px;
+    }
+    .container-title {
+        height: 100px;
+    }
+    .container-title h2 {
+        font-size: 30px;
+    }
+    .container-div-img {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    .container-img img {
+        width: 80%;
+        height: 150px;
+    }
+    .container-img-1 {
+        width: 350px;
+    }
+    .container-img-2 {
+        width: 350px;
+    } 
+}
+
+
+/** adaptacion tablet */ /** main - sobremi */
+
+@media (min-width: 768px) {
+
+    main {
+        grid-area: main;
+    }
+}
+
+
+/** adaptacion tablet */ /** main - experiencia */
+
+@media (min-width: 768px) {
+
+    .article-experiencia h1 {
+        width: 600px;
+        margin-bottom: 20px;
+    }
+    .container-info-experiencia {
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .container-proyectos {
+        width: 100%;
+        height: 560px;
+    }
+    .article-proyectos-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .article-proyectos-1 div {
+        margin: 20px;
+    }
+    .article-proyectos-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 150px;
+    }
+    .article-proyectos-2 div {
+        margin: 20px;
+    }
+}

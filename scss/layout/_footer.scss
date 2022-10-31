@@ -1,0 +1,100 @@
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/** footer - sobremi */
+
+footer {
+    grid-area: footer;
+}
+
+
+/** footer - experiencia */
+
+footer {
+    grid-area: footer;
+}
+
+
+/** footer - proyectos */
+
+footer {
+    grid-area: footer;
+}
+
+
+/** footer - contactos */
+/** esta pagina no contiene un footer */
+
+
+/** adaptacion tablet */ /** footer - pagina principal */
+
+@media (min-width: 768px) {
+
+    footer {
+        grid-area: footer;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer {
+        width: 60%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer a img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/** adaptacion tablet */ /** footer - sobremi */
+
+@media (min-width: 768px) {
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+
+/** adaptacion tablet */ /** footer - experiencia */
+
+@media (min-width: 768px) {
+
+    .footer {
+        margin-top: 50px;
+    }
+    .container-contactos {
+        width: 100%;
+        height: 800px;
+    }
+    .container-main-contactos {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-c {
+        width: 300px;
+        height: 80px;
+        margin: 20px;
+    }
+}
